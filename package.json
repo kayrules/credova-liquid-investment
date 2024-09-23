@@ -1,8 +1,8 @@
 {
-  "name": "pinwheel-astro",
+  "name": "cashsouq",
   "version": "2.0.0",
-  "description": "Astro and Tailwindcss boilerplate",
-  "author": "themefisher",
+  "description": "CashSouq Investment",
+  "author": "kayrules@gmail.com",
   "license": "MIT",
   "packageManager": "yarn@1.22.19",
   "scripts": {

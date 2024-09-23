@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "Pinwheel Astro",
-    "base_url": "https://pinwheel-astro.vercel.app",
+    "title": "CashSouq",
+    "base_url": "https://cashsouq.vercel.app",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "/images/cashsouq-logo.svg",
     "logo_width": "170",
     "logo_height": "45",
-    "logo_text": "Pinwheel"
+    "logo_text": "CashSouq"
   },
 
   "settings": {
@@ -53,6 +53,6 @@
   "metadata": {
     "meta_author": "CashSouq",
     "meta_image": "/images/og-image.png",
-    "meta_description": "pinwheel astro"
+    "meta_description": "CashSouq is a business financing platform that connects SMEs with investors."
   }
 }
