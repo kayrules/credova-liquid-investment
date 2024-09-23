@@ -4,6 +4,7 @@ import menu from "@/config/menu.json";
 
 export interface ChildNavigationLink {
   name: string;
+  subtitle: string;
   url: string;
 }
 
@@ -76,7 +77,7 @@ const { pathname } = Astro.url;
                 </span>
                 <ul
                   id="dropdown"
-                  class="nav-dropdown-list mx-auto hidden duration-300 lg:invisible lg:absolute lg:block lg:h-auto lg:w-[13.5rem] lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100"
+                  class="nav-dropdown-list mx-auto hidden duration-300 lg:invisible lg:absolute lg:block lg:h-auto lg:w-[20rem] lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100"
                 >
                   {menu.children?.map((child) => (
                     <li class="nav-dropdown-item">
@@ -90,6 +91,7 @@ const { pathname } = Astro.url;
                       >
                         {child.name}
                       </a>
+                      <p class="text-xs text-gray-500">{child.subtitle}</p>
                     </li>
                   ))}
                 </ul>
@@ -112,12 +114,12 @@ const { pathname } = Astro.url;
       }
       <li class="nav-item mt-2 lg:hidden">
         <a class="btn btn-white btn-sm border-border" href="/signin">
-          Sing Up Now</a
+          Sign Up Now</a
         >
       </li>
     </ul>
     <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 lg:flex">
-      <a class="btn btn-white btn-sm" href="/signin"> Sing Up Now</a>
+      <a class="btn btn-white btn-sm" href="/signin"> Sign Up Now</a>
     </div>
   </nav>
 </header>

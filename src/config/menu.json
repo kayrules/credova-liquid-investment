@@ -5,62 +5,44 @@
       "url": "/"
     },
     {
-      "name": "About",
-      "url": "/about"
+      "name": "SME Financing",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Invoice Financing-i",
+          "subtitle": "Convert your invoices into cash",
+          "url": "/financing/invoice-financing-i"
+        }
+      ]
     },
     {
-      "name": "Blog",
-      "url": "/blog"
-    },
-    {
-      "name": "Features",
-      "url": "/features"
+      "name": "Invest",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Invest with CashSouq",
+          "subtitle": "Optimise your wealth and support local SMEs",
+          "url": "/invest/cashsouq"
+        }
+      ]
     },
     {
       "name": "How It Works",
       "url": "/how-it-works"
     },
     {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Career",
-          "url": "/career"
-        },
-
-        {
-          "name": "Integrations",
-          "url": "/integrations"
-        },
-
-        {
-          "name": "Pricing",
-          "url": "/pricing"
-        },
-        {
-          "name": "Sign In",
-          "url": "/signin"
-        },
-
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Changelog",
-          "url": "/changelog"
-        },
-        {
-          "name": "Terms And Conditions",
-          "url": "/terms-and-conditions"
-        }
-      ]
+      "name": "FAQ",
+      "url": "/faq"
     },
     {
-      "name": "Contact",
-      "url": "/contact"
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
     }
   ],
 

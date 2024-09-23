@@ -21,6 +21,7 @@
 <!-- small description -->
 
 <!-- key features -->
+
 ## 📌 Key Features
 
 - 📄 17+ Pre-designed pages
@@ -54,13 +55,14 @@
 - 💰 Pricing
 - 📜 Changelog
 - 🔑 Sign In
-- 🔑 Sing Up
+- 🔑 Sign Up
 - 🔗 Integrations
 - 🔗 Integration Single
 - 📜 Terms and Conditions
 - 💡 Elements
 
 <!-- installation -->
+
 ## 🛠️ Installation
 
 After downloading the template, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
@@ -96,21 +98,23 @@ npm run build
 ```
 
 <!-- reporting issue -->
+
 ## 🐞 Reporting Issues
 
 We use GitHub Issues as the official bug tracker for this Template. Please Search [existing issues](https://github.com/themefisher/pinwheel-astro/issues). It’s possible someone has already reported the same problem.
 If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/pinwheel-astro/issues).
 
 <!-- licence -->
+
 ## 📝 License
 
-Copyright (c) 2023 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+Copyright (c) 2024 - Present, Designed & Developed by [CashSouq](https://cashsouq.com)
 
 **Code License:** Released under the [MIT](https://github.com/themefisher/pinwheel-astro/blob/main/LICENSE) license.
 
 **Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
 
-## 💻  Need Custom Development Services?
+## 💻 Need Custom Development Services?
 
 Besides developing beautifully designed and blazing-fast themes, we help businesses create fast, performance-focused, scalable & secure websites based on NextJs, Hugo, Astro, etc.
 
@@ -119,5 +123,5 @@ If you need a custom theme, theme customization, or complete website development
 ## 🔥 More Astro Themes By Themefisher
 
 | [![Bigpsring](https://demo.gethugothemes.com/thumbnails/bigspring.png)](https://themefisher.com/products/bigspring-light-astro) | [![Andromeda](https://demo.gethugothemes.com/thumbnails/andromeda.png)](https://themefisher.com/products/andromeda-astro) | [![Bookwrom](https://demo.gethugothemes.com/thumbnails/bookworm.png)](https://themefisher.com/products/bookworm-astro) |
-|:---:|:---:|:---:|
-| **Bigpsring Light**| **Andromeda** | **Bookwom Light** |
+| :-----------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
+|                                                       **Bigpsring Light**                                                       |                                                       **Andromeda**                                                       |                                                   **Bookwom Light**                                                    |
