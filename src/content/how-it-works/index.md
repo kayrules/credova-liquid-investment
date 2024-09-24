@@ -1,19 +1,21 @@
 ---
 title: How It Works
-page_title: our structured approach helps you navigate uncertainties
+page_title: How SME Digital Financing Works
 
-
-# perfomance
-perfomance:
-  - title: market profetionals
-    description: Encourage frequent & timely recognition integrating with communication tools
+# steps on how it works
+steps:
+  - title: Step 1
+    description: An eligible business applies for business financing by submitting the necessary details
     image: "/images/how-it-work/results.png"
-  - title: measurable results
-    description: Encourage frequent & timely recognition integrating with communication tools
+  - title: Step 2
+    description: Our credit and risk teams review each application objectively and fairly
     image: "/images/how-it-work/market-professionals.png"
-  - title: international award
-    description: Encourage frequent & timely recognition integrating with communication tools
+  - title: Step 3
+    description: Our established investor network funds the business financing on the platform
     image: "/images/how-it-work/awards.png"
+  - title: Step 4
+    description: After funding, the funds get disbursed to the business immediately
+    image: "/images/how-it-work/results.png"
 # works
 our_works:
   - title: We'll do the legwork so you don't have to.
@@ -35,4 +37,5 @@ our_works:
       - Open transaction with more than currencies
       - Customer Service with 79 languages
 ---
-Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque <br /> nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta.Lorem
+
+Explore how SME digital financing provides a seamless process for businesses to secure funding through objective reviews, investor support, and quick disbursement, ensuring efficient access to the capital you need.

@@ -8,7 +8,7 @@ import { getEntry } from "astro:content";
 import { AiFillCheckCircle } from "react-icons/ai";
 
 const how_it_works = await getEntry("how-it-works", "index");
-const { perfomance, our_works } = how_it_works.data;
+const { steps, our_works } = how_it_works.data;
 const page_data = {
   ...how_it_works.data,
   content: how_it_works.body,
@@ -30,11 +30,11 @@ const page_data = {
 
       <div class="row mt-14">
         {
-          perfomance.map((item: any, i: number) => (
-            <div class="mt-10 text-center sm:col-6 md:col-4 md:mb-0">
+          steps.map((item: any, i: number) => (
+            <div class="mt-10 text-center sm:col-6 md:col-3 md:mb-0">
               <div
                 class={`relative mx-auto mb-8 flex h-[184px] w-[184px] items-center justify-center rounded-xl bg-white p-4 shadow-lg ${
-                  perfomance.length - 1 !== i
+                  steps.length - 1 !== i
                     ? "after:absolute after:-right-4 after:-z-[1] after:hidden after:w-full after:translate-x-full after:border-b-2 after:border-dashed after:border-primary/50 after:content-[''] md:after:block"
                     : undefined
                 }`}
