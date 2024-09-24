@@ -1,6 +1,7 @@
 ---
 import Logo from "@/components/Logo.astro";
 import menu from "@/config/menu.json";
+import SpeedInsights from "@vercel/speed-insights/astro";
 
 export interface ChildNavigationLink {
   name: string;
@@ -21,6 +22,7 @@ const { pathname } = Astro.url;
 ---
 
 <header class="header">
+  <SpeedInsights />
   <nav class="navbar container">
     <!-- logo -->
     <div class="order-0">
