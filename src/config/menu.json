@@ -12,7 +12,7 @@
         {
           "name": "Invoice Financing-i",
           "subtitle": "Convert your invoices into cash",
-          "url": "/financing/invoice-financing-i"
+          "url": "/invoice-financing-i"
         }
       ]
     },
@@ -24,7 +24,7 @@
         {
           "name": "Invest with CashSouq",
           "subtitle": "Optimise your wealth and support local SMEs",
-          "url": "/invest/cashsouq"
+          "url": "/invest-with-cashsouq"
         }
       ]
     },
@@ -39,10 +39,26 @@
     {
       "name": "About",
       "url": "/about"
-    },
+    }
+  ],
+
+  "signin": [
     {
-      "name": "Blog",
-      "url": "/blog"
+      "name": "Sign In",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Investor login",
+          "subtitle": "",
+          "url": "/signin"
+        },
+        {
+          "name": "Issuer login",
+          "subtitle": "",
+          "url": "/signin"
+        }
+      ]
     }
   ],
 
@@ -56,12 +72,12 @@
       "url": "/contact"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
+      "name": "FAQ",
+      "url": "/faq"
     },
     {
-      "name": "Changelog",
-      "url": "/changelog"
+      "name": "Terms & Conditions",
+      "url": "/terms-and-conditions"
     }
   ]
 }

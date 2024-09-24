@@ -1,0 +1,66 @@
+---
+import ProductSidebar from "@/components/ProductSidebar.astro";
+import PageHeader from "@/components/PageHeader.astro";
+import Shape from "@/components/Shape.astro";
+import Base from "@/layouts/Base.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import similerItems from "@/lib/utils/similarItems";
+import { getEntryBySlug } from "astro:content";
+
+const financingIndex: any = await getEntryBySlug(
+  "invoice-financing-i",
+  "-index"
+);
+const products = await getSinglePage("invoice-financing-i");
+export async function getStaticPaths() {
+  const products = await getSinglePage("invoice-financing-i");
+  const paths = products.map((post: any) => ({
+    params: {
+      single: post.slug,
+    },
+    props: { post },
+  }));
+  return paths;
+}
+const { post } = Astro.props;
+const { Content } = await post.render();
+const similarPosts = similerItems(post, products, post.slug);
+const page_data = {
+  index_title: financingIndex.data.title,
+  page_title: post.data.title,
+  slug: post.slug,
+};
+---
+
+<Base
+  title={post.data.title}
+  meta_title={post.data.meta_title}
+  description={post.data.description}
+  image={post.data.image}
+>
+  <Shape />
+  <section class="page-hero pb-14 pt-16">
+    <div class="container">
+      <div class="page-hero-content mx-auto max-w-[883px] text-center">
+        <PageHeader page_data={page_data} />
+      </div>
+    </div>
+  </section>
+  <section class="section career-single pt-0">
+    <div class="container">
+      <div class="lg:gx-4 row">
+        <div class="lg:col-8">
+          <div
+            class="content lg:py-[60px] rounded-xl bg-white p-7 shadow-lg lg:px-12"
+          >
+            <Content />
+          </div>
+        </div>
+        <ProductSidebar
+          posts={similarPosts[0]}
+          sidebar_content={financingIndex.data.sidebar_content}
+        />
+      </div>
+    </div>
+  </section>
+</Base>

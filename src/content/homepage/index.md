@@ -1,57 +1,51 @@
 ---
 banner:
-  title: "Stronger SMEs Stronger Societies"
-  content: "We are Southeast Asia’s largest SME Digital Financing platform. We connect SMEs with investors through an online marketplace to increase financing access for SMEs."
+  title: "Innovative Shariah-Compliant Financing"
+  content: "CashSouq is the regulated Shariah-compliant Peer To Peer Crowdfunding Platform based in Malaysia. CashSouq is managed by Shoraka Suyula Platform Sdn Bhd a Recognized Market Operator regulated by the Securities Commission Malaysia."
   image: /images/banner-img.png
   button_financing:
-    label: Interested in Financing?
+    label: Interested to get funding?
     link: "/financing"
     enable: true
   button_invest:
-    label: Sign Up as Investor
+    label: Interested to invest?
     link: "/invest"
     enable: true
 
 ##key features
 key_features:
-  title: "The Highlighting Part Of Our Solution"
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  title: "Why CashSouq?"
+  description: CashSouq offers Shariah-compliant financing, regulated by Malaysia's Securities Commission, with secure investments and a vast investor network.
   feature_list:
     - icon: "map" #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title: Regulatory Compliance
+      content: Registered with Securities Commission Malaysia.
     - icon: "lock" #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title: Regional Leader
+      content: Largest SME Digital Debt Investment Platform in Southeast Asia.
     - icon: "link" #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title: Funding Milestone
+      content: Disbursed more than RM 17.8 billion to over 5 million notes.
     - icon: "bell" #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title: Investor Network
+      content: More than 60,000 registered Investors in Malaysia.
     - icon: "monitor" #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title: Trustee Management
+      content: Investors' funds managed by Malaysian Trustees Berhad.
     - icon: "map" #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "link" #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "bell" #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title: Shariah Compliance
+      content: 100% Shariah-Compliant Investment Products.
     - icon: "map" #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "monitor" #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title: Market Leadership
+      content: Recognized as a leading Shariah-compliant platform in Malaysia's P2P crowdfunding industry.
+    - icon: "map" #icon package react-feather-icon [https://feathericons.com/]
+      title: Investor Security
+      content: Offering secure, regulated investment opportunities with high transparency and accountability.
 
 #service
 service:
   homepage_tab:
-    title: Prevent failure from to impacting your reputation
+    title: Prevent failure from impacting your reputation
     description: Our platform helps you build secure onboarding authentication experiences that retain and engage your users. We build the infrastructure, you can.
     tab_list:
       - title: Habit building essential choose habit

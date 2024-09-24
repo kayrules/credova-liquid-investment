@@ -18,16 +18,16 @@
   },
 
   "cta_financing": {
-    "financing_title": "Interested in Financing?",
+    "financing_title": "Interested to get funding?",
     "financing_desc": "Get the business financing that you require. Simple application, fast approval.",
     "financing_button": {
-      "financing_label": "Apply for Business Financing",
+      "financing_label": "Apply for Funding",
       "financing_link": "/financing"
     }
   },
 
   "cta_invest": {
-    "invest_title": "Interested in Investing?",
+    "invest_title": "Interested to Invest?",
     "invest_desc": "Receive returns in the form of interest by providing financing to local SMEs.",
     "invest_button": {
       "invest_label": "Sign Up as Investor",
@@ -42,10 +42,10 @@
   },
 
   "params": {
-    "footer_description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
-    "email": "info@andromeda.io",
-    "location": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
-    "phone": "+704-555-0127",
+    "footer_description": "CashSouq is managed by Shoraka Suyula Platform Sdn Bhd a Recognized Market Operator regulated by the Securities Commission Malaysia.",
+    "email": "info.cap@shorakagroup.com",
+    "location": "Level 17, Wisma Mont Kiara, 1 Jalan Kiara Mont Kiara 50480 Kuala Lumpur, Wilayah Persekutuan",
+    "phone": "+603-6411-6988",
     "contact_form_action": "#",
     "copyright": "Copyright © 2024 a theme by [CashSouq](https://cashsouq.com)"
   },

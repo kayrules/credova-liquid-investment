@@ -16,7 +16,10 @@ const { title, button_financing, button_invest, image, content } = banner;
         {
           button_financing.enable && (
             <>
-              <a class="btn btn-primary mt-8" href={button_financing.link}>
+              <a
+                class="btn btn-primary mt-8 w-64 md:w-auto"
+                href={button_financing.link}
+              >
                 {button_financing.label}
               </a>
             </>
@@ -25,7 +28,10 @@ const { title, button_financing, button_invest, image, content } = banner;
         {
           button_invest.enable && (
             <>
-              <a class="btn btn-white mt-8 ml-3" href={button_invest.link}>
+              <a
+                class="btn btn-white mt-3 md:mt-8 w-64 md:w-auto"
+                href={button_invest.link}
+              >
                 {button_invest.label}
               </a>
             </>
