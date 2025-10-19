@@ -9,7 +9,7 @@ const SignupContent = () => {
       <section className="lg:flex lg:w-1/2 flex-col bg-gradient-to-tr from-blue-100 to-white px-5 relative overflow-hidden shadow-lg border my-14 mx-10 md:mx-20 lg:mx-0 lg:ml-20 rounded-xl">
         <a href="/" className="absolute top-8 left-10 z-20 cursor-pointer">
           <img
-            src="/images/liquid-logo.svg"
+            src="/images/liquid-logo.png"
             alt="Liquid Logo"
             className="w-32"
           />
@@ -105,7 +105,7 @@ const SignupContent = () => {
           {/* Logo and Text */}
           <a href="/" className="flex flex-col items-center mb-10 cursor-pointer hover:opacity-80 transition">
             <img
-              src="/images/liquid-logo.svg"
+              src="/images/liquid-logo.png"
               alt="Liquid Logo"
               className="h-14 mb-0"
             />

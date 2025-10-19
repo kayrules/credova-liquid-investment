@@ -20,7 +20,7 @@ const SigninContent = () => {
           {/* Logo and Text */}
           <a href="/" className="flex flex-col items-center mb-10 cursor-pointer hover:opacity-80 transition">
             <img
-              src="/images/liquid-logo.svg"
+              src="/images/liquid-logo.png"
               alt="Liquid Logo"
               className="h-14 mb-0"
             />

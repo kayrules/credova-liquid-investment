@@ -5,7 +5,7 @@
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.ico",
-    "logo": "/images/liquid-logo.svg",
+    "logo": "/images/liquid-logo.png",
     "logo_width": "170",
     "logo_height": "45",
     "logo_text": "LIQUID"
