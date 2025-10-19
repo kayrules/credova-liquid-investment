@@ -2,37 +2,37 @@
 import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
 const { banner } = Astro.props;
-const { title, button_financing, button_invest, image, content } = banner;
+const { title, button_financing, button_invest, button_seller, button_buyer, image, content } = banner;
 ---
 
 <section class="section banner relative">
   <div class="container">
     <div class="row items-center">
       <div class="lg:col-6">
-        <h1 class="banner-title" set:html={markdownify(title)} />
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900" set:html={markdownify(title)} />
 
-        <p class="mt-6" set:html={markdownify(content)} />
+        <p class="mt-6 text-base md:text-lg text-gray-600 leading-relaxed max-w-2xl" set:html={markdownify(content)} />
 
         {
-          button_financing.enable && (
+          (button_financing || button_seller)?.enable && (
             <>
               <a
                 class="btn btn-primary mt-8 w-64 md:w-auto"
-                href={button_financing.link}
+                href={(button_financing || button_seller)?.link}
               >
-                {button_financing.label}
+                {(button_financing || button_seller)?.label}
               </a>
             </>
           )
         }
         {
-          button_invest.enable && (
+          (button_invest || button_buyer)?.enable && (
             <>
               <a
                 class="btn btn-white mt-3 md:mt-8 w-64 md:w-auto"
-                href={button_invest.link}
+                href={(button_invest || button_buyer)?.link}
               >
-                {button_invest.label}
+                {(button_invest || button_buyer)?.label}
               </a>
             </>
           )

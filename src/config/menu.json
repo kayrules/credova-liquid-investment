@@ -5,26 +5,19 @@
       "url": "/"
     },
     {
-      "name": "SME Financing",
+      "name": "Receivables",
       "url": "",
       "hasChildren": true,
       "children": [
         {
-          "name": "Invoice Financing-i",
-          "subtitle": "Convert your invoices into cash",
-          "url": "/invoice-financing-i"
-        }
-      ]
-    },
-    {
-      "name": "Invest",
-      "url": "",
-      "hasChildren": true,
-      "children": [
+          "name": "For Sellers (Ar-Rahnu Operators)",
+          "subtitle": "Turn your receivables into liquidity",
+          "url": "/receivables/sellers"
+        },
         {
-          "name": "Invest with CashSouq",
-          "subtitle": "Optimise your wealth and support local SMEs",
-          "url": "/invest-with-cashsouq"
+          "name": "For Buyers (Receivables)",
+          "subtitle": "Browse and invest in Ar-Rahnu receivables",
+          "url": "/receivables/buyers"
         }
       ]
     },
@@ -49,14 +42,14 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "Investor login",
+          "name": "Buyer login",
           "subtitle": "",
-          "url": "/signin"
+          "url": "/signin?role=buyer"
         },
         {
-          "name": "Issuer login",
+          "name": "Seller login",
           "subtitle": "",
-          "url": "/signin"
+          "url": "/signin?role=seller"
         }
       ]
     }

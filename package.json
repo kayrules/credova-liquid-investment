@@ -1,7 +1,7 @@
 {
-  "name": "cashsouq",
+  "name": "liquid-investment",
   "version": "2.0.0",
-  "description": "CashSouq Investment",
+  "description": "Liquid Investment",
   "author": "kayrules@gmail.com",
   "license": "MIT",
   "packageManager": "yarn@1.22.19",

@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "CashSouq",
+    "title": "LIQUID Investment",
     "base_url": "https://cashsouq.vercel.app",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/cashsouq-logo.svg",
+    "favicon": "/images/favicon.ico",
+    "logo": "/images/liquid-logo.svg",
     "logo_width": "170",
     "logo_height": "45",
-    "logo_text": "CashSouq"
+    "logo_text": "LIQUID"
   },
 
   "settings": {
@@ -17,21 +17,21 @@
     "blog_folder": "blog"
   },
 
-  "cta_financing": {
-    "financing_title": "Interested to get funding?",
-    "financing_desc": "Get the business financing that you require. Simple application, fast approval.",
-    "financing_button": {
-      "financing_label": "Apply for Funding",
-      "financing_link": "/financing"
+  "cta_sellers": {
+    "sellers_title": "Need Liquidity?",
+    "sellers_desc": "Upload your Ar-Rahnu receivables and access funding while you continue servicing customers.",
+    "sellers_button": {
+      "sellers_label": "List My Receivables",
+      "sellers_link": "/receivables/sellers"
     }
   },
 
-  "cta_invest": {
-    "invest_title": "Interested to Invest?",
-    "invest_desc": "Receive returns in the form of interest by providing financing to local SMEs.",
-    "invest_button": {
-      "invest_label": "Sign Up as Investor",
-      "invest_link": "/invest"
+  "cta_buyers": {
+    "buyers_title": "Looking to Buy Receivables?",
+    "buyers_desc": "Explore short-tenor, asset-backed Shariah-compliant receivables with transparent performance data.",
+    "buyers_button": {
+      "buyers_label": "Browse Live Deals",
+      "buyers_link": "/receivables/buyers"
     }
   },
 
@@ -42,17 +42,17 @@
   },
 
   "params": {
-    "footer_description": "CashSouq is managed by Shoraka Suyula Platform Sdn Bhd a Recognized Market Operator regulated by the Securities Commission Malaysia.",
-    "email": "info.cap@shorakagroup.com",
+    "footer_description": "Liquid is a Shariah-compliant Ar-Rahnu Receivables Marketplace connecting licensed pawnbrokers (Sellers) with qualified Buyers to trade asset-backed receivables.",
+    "email": "info@liquid.com",
     "location": "Level 17, Wisma Mont Kiara, 1 Jalan Kiara Mont Kiara 50480 Kuala Lumpur, Wilayah Persekutuan",
     "phone": "+603-6411-6988",
     "contact_form_action": "#",
-    "copyright": "Copyright © 2024 a theme by [CashSouq](https://cashsouq.com)"
+    "copyright": "Copyright © 2024 Liquid - Shariah-Compliant Ar-Rahnu Receivables Marketplace"
   },
 
   "metadata": {
-    "meta_author": "CashSouq",
+    "meta_author": "Liquid",
     "meta_image": "/images/og-image.png",
-    "meta_description": "CashSouq is a business financing platform that connects SMEs with investors."
+    "meta_description": "Liquid is a Shariah-compliant Ar-Rahnu Receivables Marketplace connecting pawnbrokers with investors for transparent, asset-backed receivables trading."
   }
 }

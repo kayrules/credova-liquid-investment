@@ -2,15 +2,15 @@
 import config from "@/config/config.json";
 
 const {
-  cta_financing: {
-    financing_title,
-    financing_desc,
-    financing_button: { financing_label, financing_link },
+  cta_sellers: {
+    sellers_title,
+    sellers_desc,
+    sellers_button: { sellers_label, sellers_link },
   },
-  cta_invest: {
-    invest_title,
-    invest_desc,
-    invest_button: { invest_label, invest_link },
+  cta_buyers: {
+    buyers_title,
+    buyers_desc,
+    buyers_button: { buyers_label, buyers_link },
   },
 } = config;
 ---
@@ -18,24 +18,24 @@ const {
 <section class="px-5 py-20 xl:py-[120px]">
   <div class="container">
     <div
-      class="bg-gradient row justify-center rounded-bl-[20px] rounded-br-[150px] rounded-tl-[100px] rounded-tr-[20px] px-[30px] pb-[75px] pt-16"
+      class="bg-gradient-to-t from-blue-500 to-blue-800 row justify-center rounded-bl-[20px] rounded-br-[150px] rounded-tl-[100px] rounded-tr-[20px] px-[30px] pb-[75px] pt-16"
     >
       <div class="lg:col-11">
         <div class="row">
           <div class="lg:col-6">
-            <h1 class="h3 text-white">{financing_title}</h1>
-            <span class="text-white mt-8">{financing_desc}</span>
+            <h1 class="h3 text-white">{sellers_title}</h1>
+            <span class="text-white mt-8">{sellers_desc}</span>
             <p>
-              <a class="btn btn-white mt-8" href={financing_link}
-                >{financing_label}</a
+              <a class="btn btn-white mt-8" href={sellers_link}
+                >{sellers_label}</a
               >
             </p>
           </div>
           <div class="mt-8 lg:col-6 lg:mt-0">
-            <h1 class="h3 text-white">{invest_title}</h1>
-            <span class="text-white mt-8">{invest_desc}</span>
+            <h1 class="h3 text-white">{buyers_title}</h1>
+            <span class="text-white mt-8">{buyers_desc}</span>
             <p>
-              <a class="btn btn-white mt-8" href={invest_link}>{invest_label}</a
+              <a class="btn btn-white mt-8" href={buyers_link}>{buyers_label}</a
               >
             </p>
           </div>

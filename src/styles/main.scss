@@ -1,17 +1,9 @@
+@use "base" as *;
+@use "components" as *;
+@use "navigation" as *;
+@use "buttons" as *;
+@use "utilities" as *;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-  @import "base";
-}
-
-@layer components {
-  @import "components";
-  @import "navigation";
-  @import "buttons";
-}
-
-@layer utilities {
-  @import "utilities";
-}

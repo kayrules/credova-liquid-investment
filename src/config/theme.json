@@ -2,8 +2,8 @@
   "colors": {
     "default": {
       "theme_color": {
-        "primary": "#CE2922",
-        "secondary": "#FEE140",
+        "primary": "#007AFF",
+        "secondary": "#5AC8FA",
         "body": "#fafafa",
         "border": "#EBEBEB",
         "theme_light": "#E5E5E5",

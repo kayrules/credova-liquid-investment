@@ -8,7 +8,7 @@ import { getEntry } from "astro:content";
 import { AiFillCheckCircle } from "react-icons/ai";
 
 const how_it_works = await getEntry("how-it-works", "index");
-const { steps, our_works } = how_it_works.data;
+const { sellers_steps, buyers_steps, seller_benefits, buyer_benefits } = how_it_works.data;
 const page_data = {
   ...how_it_works.data,
   content: how_it_works.body,
@@ -22,19 +22,22 @@ const page_data = {
   image={how_it_works.data.image}
 >
   <Shape />
+
+  <!-- Sellers Section -->
   <section class="page-hero pb-14 pt-16">
     <div class="container">
-      <div class="page-hero-content mx-auto max-w-[883px] text-center">
-        <PageHeader page_data={page_data} />
+      <div class="page-hero-content mx-auto max-w-[883px] text-center mb-10">
+        <h2 class="text-4xl font-bold mb-4">How It Works for Sellers</h2>
+        <p class="text-lg text-muted">Turn your Ar-Rahnu receivables into liquidity</p>
       </div>
 
       <div class="row mt-14">
         {
-          steps.map((item: any, i: number) => (
+          sellers_steps.map((item: any, i: number) => (
             <div class="mt-10 text-center sm:col-6 md:col-3 md:mb-0">
               <div
                 class={`relative mx-auto mb-8 flex h-[184px] w-[184px] items-center justify-center rounded-xl bg-white p-4 shadow-lg ${
-                  steps.length - 1 !== i
+                  sellers_steps.length - 1 !== i
                     ? "after:absolute after:-right-4 after:-z-[1] after:hidden after:w-full after:translate-x-full after:border-b-2 after:border-dashed after:border-primary/50 after:content-[''] md:after:block"
                     : undefined
                 }`}
@@ -50,34 +53,72 @@ const page_data = {
     </div>
   </section>
 
+  <!-- Sellers Benefits -->
   <section>
     <div class="container">
       {
-        our_works.map((item: any, index: number) => (
+        seller_benefits.map((item: any, index: number) => (
           <div class="gx-5 row mt-16 items-center first:mt-12">
-            <div
-              class={`lg:col-7 ${
-                index % 2 === 0 ? "lg:order-1" : "lg:order-0"
-              }`}
-            >
-              <div class="relative">
-                <Image
-                  class="w-full object-contain"
-                  alt="service"
-                  width={473}
-                  height={286}
-                  src={item.image}
-                />
-              </div>
-            </div>
-            <div
-              class={`mt-6 lg:col-5 lg:mt-0 ${
-                index % 2 === 0 ? "lg:order-0" : "lg:order-1"
-              }`}
-            >
+            <div class={`mt-6 lg:col-5 ${index % 2 === 0 ? "lg:order-0" : "lg:order-1"}`}>
               <div class="text-container">
                 <h2 class="lg:text-4xl">{item.title}</h2>
+                <p class="mt-4">{item.description}</p>
+                <ul class="mt-6 text-dark lg:-ml-4">
+                  {item.list.map((list: any) => (
+                    <li class="mb-2 flex items-center rounded px-4">
+                      <AiFillCheckCircle className="mr-3 fill-primary text-white" />
+                      {list}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
 
+  <!-- Buyers Section -->
+  <section class="page-hero pb-14 pt-16 bg-light">
+    <div class="container">
+      <div class="page-hero-content mx-auto max-w-[883px] text-center mb-10">
+        <h2 class="text-4xl font-bold mb-4">How It Works for Buyers</h2>
+        <p class="text-lg text-muted">Invest in Shariah-compliant Ar-Rahnu receivables</p>
+      </div>
+
+      <div class="row mt-14">
+        {
+          buyers_steps.map((item: any, i: number) => (
+            <div class="mt-10 text-center sm:col-6 md:col-3 md:mb-0">
+              <div
+                class={`relative mx-auto mb-8 flex h-[184px] w-[184px] items-center justify-center rounded-xl bg-white p-4 shadow-lg ${
+                  buyers_steps.length - 1 !== i
+                    ? "after:absolute after:-right-4 after:-z-[1] after:hidden after:w-full after:translate-x-full after:border-b-2 after:border-dashed after:border-primary/50 after:content-[''] md:after:block"
+                    : undefined
+                }`}
+              >
+                <Image height={122} width={144} src={item.image} alt="" />
+              </div>
+              <h2 class="h5">{item.title}</h2>
+              <p class="mt-4">{item.description}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Buyers Benefits -->
+  <section>
+    <div class="container">
+      {
+        buyer_benefits.map((item: any, index: number) => (
+          <div class="gx-5 row mt-16 items-center first:mt-12">
+            <div class={`mt-6 lg:col-5 ${index % 2 === 0 ? "lg:order-0" : "lg:order-1"}`}>
+              <div class="text-container">
+                <h2 class="lg:text-4xl">{item.title}</h2>
+                <p class="mt-4">{item.description}</p>
                 <ul class="mt-6 text-dark lg:-ml-4">
                   {item.list.map((list: any) => (
                     <li class="mb-2 flex items-center rounded px-4">

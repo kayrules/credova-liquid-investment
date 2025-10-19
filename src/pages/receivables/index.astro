@@ -1,0 +1,256 @@
+---
+import Base from "@/layouts/Base.astro";
+
+const page_title = "Receivables";
+---
+
+<Base title={page_title}>
+  <section class="section banner relative">
+    <div class="container">
+      <div class="row items-center">
+        <div class="lg:col-6">
+          <h1 class="banner-title mb-4">{page_title}</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-md-12">
+          <h1 class="h2 mb-4">Shariah-Compliant Ar-Rahnu Receivables Marketplace</h1>
+          <p class="lead text-muted">
+            Liquid connects licensed pawnbrokers with qualified investors to trade asset-backed receivables.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="card card-large">
+            <div class="card-body text-center">
+              <div class="icon-large mb-4">
+                <i class="fas fa-money-bill-wave text-success"></i>
+              </div>
+              <h3 class="card-title mb-3">For Sellers</h3>
+              <p class="card-text mb-4">
+                Are you an Ar-Rahnu operator looking to unlock liquidity from your receivables? List your portfolio and access funding while you continue servicing customers.
+              </p>
+              <a href="/receivables/sellers" class="btn btn-success">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-large">
+            <div class="card-body text-center">
+              <div class="icon-large mb-4">
+                <i class="fas fa-chart-pie text-primary"></i>
+              </div>
+              <h3 class="card-title mb-3">For Buyers</h3>
+              <p class="card-text mb-4">
+                Are you looking for short-tenor, asset-backed investments? Browse live receivables portfolios and earn Shariah-compliant returns.
+              </p>
+              <a href="/receivables/buyers" class="btn btn-primary">Browse Deals</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="mb-5 text-center">What is Ar-Rahnu?</h2>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <p>
+            <strong>Ar-Rahnu</strong> is an Islamic pawnbroking system where a customer pledges valuable collateral (typically gold, jewelry, or other assets) to obtain short-term financing. The lender charges a <strong>ujrah</strong> (safekeeping and service fee) rather than interest, making it fully Shariah-compliant.
+          </p>
+          <p>
+            Liquid provides a marketplace where licensed Ar-Rahnu operators can access capital by trading their receivables to qualified investors, while investors gain exposure to asset-backed, short-tenor investments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="mb-5 text-center">Why Liquid?</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Regulatory Alignment</h5>
+              <p>Built for Malaysia's Ar-Rahnu ecosystem with Shariah governance and audit trail.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Asset-Backed</h5>
+              <p>Each receivable is secured by pledged collateral reducing counterparty risk.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-zap"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Short Tenor</h5>
+              <p>Typical 1–6 months with active secondary exits via portfolio settlement.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Transparent Performance</h5>
+              <p>Real-time cohort stats: redemption rate, aging, realised profit/ujrah.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="mb-5 text-center">How It Works</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="how-it-works">
+            <div class="flow-item">
+              <div class="flow-step">1</div>
+              <h5>Seller Uploads</h5>
+              <p>Ar-Rahnu operator submits portfolio of active receivables.</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-item">
+              <div class="flow-step">2</div>
+              <h5>Verification</h5>
+              <p>Liquid validates compliance and risk metrics.</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-item">
+              <div class="flow-step">3</div>
+              <h5>Listing</h5>
+              <p>Portfolio listed on marketplace for buyers.</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-item">
+              <div class="flow-step">4</div>
+              <h5>Buyer Invests</h5>
+              <p>Qualified buyer commits capital and receives cashflows.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container text-center">
+      <h2 class="mb-4">Ready to Get Started?</h2>
+      <p class="lead mb-5">
+        Join the Shariah-compliant receivables marketplace.
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="/auth/register?role=seller" class="btn btn-success btn-lg btn-block mb-3 mb-md-0">Register as Seller</a>
+        </div>
+        <div class="col-md-6">
+          <a href="/auth/register?role=buyer" class="btn btn-primary btn-lg btn-block">Register as Buyer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .card-large {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-large:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .icon-large {
+    font-size: 3rem;
+  }
+
+  .feature {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+    color: var(--primary-color, #007bff);
+    flex-shrink: 0;
+  }
+
+  .feature-content h5 {
+    margin-top: 0;
+  }
+
+  .how-it-works {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .flow-item {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .flow-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-color, #007bff);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0 auto 1rem;
+  }
+
+  .flow-arrow {
+    font-size: 2rem;
+    color: var(--primary-color, #007bff);
+    flex: 0 1 auto;
+  }
+
+  @media (max-width: 768px) {
+    .how-it-works {
+      flex-direction: column;
+    }
+
+    .flow-arrow {
+      transform: rotate(90deg);
+    }
+  }
+</style>

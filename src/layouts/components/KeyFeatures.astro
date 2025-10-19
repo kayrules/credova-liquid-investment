@@ -15,12 +15,12 @@ const { title, description, feature_list } = key_features;
     alt=""
   />
   <div class="container">
-    <div class="row justify-between text-center lg:text-start">
-      <div class="lg:col-5">
-        <h2 set:html={markdownify(title)} />
+    <div class="row justify-between lg:text-start">
+      <div class="lg:col-5 text-center lg:text-start">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" set:html={markdownify(title)} />
       </div>
       <div class="mt-6 lg:col-5 lg:mt-0">
-        <p set:html={markdownify(description)} />
+        <p class="text-base lg:text-lg text-gray-600 leading-relaxed" set:html={markdownify(description)} />
       </div>
     </div>
     <HomapageFeature feature_list={feature_list} client:load />
