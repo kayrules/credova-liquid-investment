@@ -5,11 +5,11 @@ banner:
   image: /images/banner-img.png
   button_seller:
     label: I'm a Seller – Get Liquidity
-    link: "/receivables/sellers"
+    link: "/how-it-works/sellers"
     enable: true
   button_buyer:
     label: I'm a Buyer – Browse Receivables
-    link: "/receivables/buyers"
+    link: "/how-it-works/buyers"
     enable: true
 
 key_features:

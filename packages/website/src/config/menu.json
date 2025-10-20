@@ -5,25 +5,21 @@
       "url": "/"
     },
     {
-      "name": "Receivables",
+      "name": "How It Works",
       "url": "",
       "hasChildren": true,
       "children": [
         {
           "name": "For Sellers (Ar-Rahnu Operators)",
           "subtitle": "Turn your receivables into liquidity",
-          "url": "/receivables/sellers"
+          "url": "/how-it-works/sellers"
         },
         {
           "name": "For Buyers (Receivables)",
           "subtitle": "Browse and invest in Ar-Rahnu receivables",
-          "url": "/receivables/buyers"
+          "url": "/how-it-works/buyers"
         }
       ]
-    },
-    {
-      "name": "How It Works",
-      "url": "/how-it-works"
     },
     {
       "name": "FAQ",

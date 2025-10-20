@@ -16,11 +16,11 @@ const { Content } = await entry.render();
       <div class="flex h-[40vh] items-center justify-center">
         <div class="text-center">
           <Image
-            src="/images/404.png"
-            class="mb-4 inline"
+            src="/images/404.jpg"
+            class="mb-4 inline rounded-xl"
             alt="logo"
-            height={120}
-            width={120}
+            height={333}
+            width={500}
           />
           <h1 class="mb-4" set:html={markdownify(entry.data.title)} />
           <Content />
