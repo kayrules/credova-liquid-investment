@@ -12,7 +12,7 @@
     "dev": "bun run --filter @liquid-investment/website dev",
     "dev:console": "bun run --filter @liquid-investment/console dev",
     "dev:all": "bun run dev & bun run dev:console",
-    "build": "bun run --filter @liquid-investment/website build",
+    "build:website": "bun run --filter @liquid-investment/website build",
     "build:console": "bun run --filter @liquid-investment/console build",
     "build:all": "bun run build && bun run build:console",
     "format": "prettier -w ."
