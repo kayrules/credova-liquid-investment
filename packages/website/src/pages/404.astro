@@ -12,18 +12,20 @@ const { Content } = await entry.render();
 
 <Base title={entry.data.title}>
   <section class="section">
-    <div class="container">
+    <div class="container my-[100px]">
       <div class="flex h-[40vh] items-center justify-center">
         <div class="text-center">
           <Image
-            src="/images/404.jpg"
+            src="/images/404.svg"
             class="mb-4 inline rounded-xl"
             alt="logo"
             height={333}
             width={500}
           />
           <h1 class="mb-4" set:html={markdownify(entry.data.title)} />
-          <Content />
+          <div class="text-4xl">
+            <Content />
+          </div>
         </div>
       </div>
     </div>
