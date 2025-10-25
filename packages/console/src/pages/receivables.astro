@@ -1,0 +1,151 @@
+---
+import LayoutSidebar from '../app/LayoutSidebar.astro';
+---
+
+<LayoutSidebar>
+	<div class="p-4 bg-white block sm:flex items-center justify-between border-b border-gray-200 lg:mt-1.5 dark:bg-gray-800 dark:border-gray-700">
+		<div class="w-full mb-1">
+			<div class="mb-4">
+				<h1 class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">
+					Investment Opportunities
+				</h1>
+				<p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+					Browse available receivables and investment opportunities
+				</p>
+			</div>
+			<div class="sm:flex">
+				<div class="items-center hidden mb-3 sm:flex sm:divide-x sm:divide-gray-100 sm:mb-0 dark:divide-gray-700">
+					<form class="lg:pr-3" action="#" method="GET">
+						<label for="receivables-search" class="sr-only">Search</label>
+						<div class="relative mt-1 lg:w-64 xl:w-96">
+							<input
+								type="text"
+								name="email"
+								id="receivables-search"
+								class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+								placeholder="Search financing code..."
+							/>
+						</div>
+					</form>
+				</div>
+				<div class="flex items-center ml-auto space-x-2 sm:space-x-3">
+					<button
+						type="button"
+						class="inline-flex items-center justify-center w-1/2 px-3 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-primary-300 sm:w-auto dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+					>
+						<svg
+							class="w-5 h-5 mr-2 -ml-1"
+							fill="currentColor"
+							viewBox="0 0 20 20"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z"
+								clip-rule="evenodd"
+							></path>
+						</svg>
+						Filter
+					</button>
+					<button
+						type="button"
+						class="inline-flex items-center justify-center w-1/2 px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 sm:w-auto dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+					>
+						<svg
+							class="w-5 h-5 mr-2 -ml-1"
+							fill="currentColor"
+							viewBox="0 0 20 20"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"
+							></path>
+							<path
+								fill-rule="evenodd"
+								d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"
+								clip-rule="evenodd"
+							></path>
+						</svg>
+						Refresh
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="flex flex-col">
+		<div class="overflow-x-auto">
+			<div class="inline-block min-w-full align-middle">
+				<div class="overflow-hidden shadow">
+					<div class="p-6 bg-white dark:bg-gray-800">
+						<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+							<!-- Receivable Card 1 -->
+							<div class="p-4 border border-gray-200 rounded-lg dark:border-gray-700">
+								<div class="flex items-center justify-between mb-3">
+									<span class="text-sm font-semibold text-gray-900 dark:text-white">MBAP-25100011</span>
+									<span class="px-2.5 py-0.5 text-xs font-medium text-green-800 bg-green-100 rounded dark:bg-green-900 dark:text-green-300">
+										Funding Now
+									</span>
+								</div>
+								<p class="mb-3 text-xs text-gray-500 dark:text-gray-400">
+									You've invested <span class="font-medium text-primary-600 dark:text-primary-500">RM0</span> in this loan
+								</p>
+								<div class="space-y-2 text-sm">
+									<div class="flex justify-between">
+										<span class="text-gray-500 dark:text-gray-400">Type</span>
+										<span class="font-medium text-gray-900 dark:text-white">Accounts Payable Financing</span>
+									</div>
+									<div class="flex justify-between">
+										<span class="text-gray-500 dark:text-gray-400">Industry</span>
+										<span class="font-medium text-gray-900 dark:text-white">Wholesale and Retail Trade</span>
+									</div>
+									<div class="flex justify-between">
+										<span class="text-gray-500 dark:text-gray-400">Funded (RM)</span>
+										<span class="font-medium text-gray-900 dark:text-white">298,000</span>
+									</div>
+									<div class="flex justify-between">
+										<span class="text-gray-500 dark:text-gray-400">Goal (RM)</span>
+										<span class="font-medium text-gray-900 dark:text-white">430,000</span>
+									</div>
+									<div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 my-2">
+										<div class="bg-primary-600 h-2.5 rounded-full" style="width: 69%"></div>
+									</div>
+									<div class="flex justify-between">
+										<span class="text-gray-500 dark:text-gray-400">Per Annum</span>
+										<span class="font-medium text-gray-900 dark:text-white">10.8%</span>
+									</div>
+									<div class="flex justify-between">
+										<span class="text-gray-500 dark:text-gray-400">Day(s)</span>
+										<span class="font-medium text-gray-900 dark:text-white">30</span>
+									</div>
+									<div class="flex justify-between">
+										<span class="text-gray-500 dark:text-gray-400">Min. Investment (RM)</span>
+										<span class="font-medium text-gray-900 dark:text-white">100</span>
+									</div>
+									<div class="flex justify-between">
+										<span class="text-gray-500 dark:text-gray-400">Max. Investment (RM)</span>
+										<span class="font-medium text-gray-900 dark:text-white">2,000</span>
+									</div>
+								</div>
+								<div class="mt-4 flex space-x-2">
+									<button
+										type="button"
+										class="flex-1 text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-3 py-2 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+									>
+										Invest Now
+									</button>
+									<button
+										type="button"
+										class="px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+									>
+										Details
+									</button>
+								</div>
+							</div>
+							<!-- More cards can be added here -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</LayoutSidebar>
