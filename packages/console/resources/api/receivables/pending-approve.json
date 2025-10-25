@@ -1,0 +1,60 @@
+{
+  "status": "success",
+  "data": {
+    "pending_approve": [
+      {
+        "id": "ARPG-25100018",
+        "title": "Ar-Rahnu Receivable",
+        "branch": "KOSAHABAT - RAWANG",
+        "asset": { "type": "22K Necklace", "weight_gram": 19, "appraised_value_rm": 7900.00 },
+        "receivable_value_rm": 6000.00,
+        "purchase_price_rm": 5780.00,
+        "profit_rate_pa": 7.0,
+        "tenure_days": 7,
+        "start_date": "2025-11-03",
+        "maturity_date": "2025-11-10",
+        "expected_return_rm": 5788.00,
+        "status": { "code": "PENDING_APPROVE", "label": "Pending Approval", "color": "#BDBDBD" },
+        "is_single_buyer": true,
+        "actions": { "buy_now_enabled": false, "view_details_url": "/receivables/ARPG-25100018" }
+      },
+      {
+        "id": "ARPG-25100019",
+        "title": "Ar-Rahnu Receivable",
+        "branch": "AR-RAHNU XCHANGE - KLANG",
+        "asset": { "type": "24K Pendant", "weight_gram": 16, "appraised_value_rm": 7200.00 },
+        "receivable_value_rm": 5000.00,
+        "purchase_price_rm": 4820.00,
+        "profit_rate_pa": 6.7,
+        "tenure_days": 8,
+        "start_date": "2025-11-04",
+        "maturity_date": "2025-11-12",
+        "expected_return_rm": 4829.00,
+        "status": { "code": "PENDING_APPROVE", "label": "Pending Approval", "color": "#BDBDBD" },
+        "is_single_buyer": true,
+        "actions": { "buy_now_enabled": false, "view_details_url": "/receivables/ARPG-25100019" }
+      },
+      {
+        "id": "ARPG-25100020",
+        "title": "Ar-Rahnu Receivable",
+        "branch": "KOSAHABAT - PENAMPANG",
+        "asset": { "type": "22K Gold Chain", "weight_gram": 21, "appraised_value_rm": 8200.00 },
+        "receivable_value_rm": 6500.00,
+        "purchase_price_rm": 6300.00,
+        "profit_rate_pa": 7.1,
+        "tenure_days": 9,
+        "start_date": "2025-11-05",
+        "maturity_date": "2025-11-14",
+        "expected_return_rm": 6310.00,
+        "status": { "code": "PENDING_APPROVE", "label": "Pending Approval", "color": "#BDBDBD" },
+        "is_single_buyer": true,
+        "actions": { "buy_now_enabled": false, "view_details_url": "/receivables/ARPG-25100020" }
+      }
+    ]
+  },
+  "meta": {
+    "currency": "MYR",
+    "pending_approve_count": 3,
+    "last_updated": "2025-10-25T13:00:00Z"
+  }
+}

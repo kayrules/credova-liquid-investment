@@ -1,0 +1,92 @@
+{
+  "status": "success",
+  "data": {
+    "upcoming": [
+      {
+        "id": "ARPG-25100013",
+        "title": "Ar-Rahnu Receivable",
+        "branch": "KOSAHABAT - KUALA SELANGOR",
+        "asset": { "type": "21K Necklace", "weight_gram": 18, "appraised_value_rm": 7900.00 },
+        "receivable_value_rm": 6000.00,
+        "purchase_price_rm": 5820.00,
+        "profit_rate_pa": 6.8,
+        "tenure_days": 7,
+        "start_date": "2025-10-28",
+        "maturity_date": "2025-11-04",
+        "expected_return_rm": 5828.22,
+        "status": { "code": "UPCOMING", "label": "Coming Soon", "color": "#8A2BE2" },
+        "is_single_buyer": true,
+        "actions": { "buy_now_enabled": false, "view_details_url": "/receivables/ARPG-25100013" }
+      },
+      {
+        "id": "ARPG-25100014",
+        "title": "Ar-Rahnu Receivable",
+        "branch": "KOSAHABAT - SABAK BERNAM",
+        "asset": { "type": "22K Bracelet", "weight_gram": 16, "appraised_value_rm": 7200.00 },
+        "receivable_value_rm": 5000.00,
+        "purchase_price_rm": 4850.00,
+        "profit_rate_pa": 6.9,
+        "tenure_days": 7,
+        "start_date": "2025-10-29",
+        "maturity_date": "2025-11-05",
+        "expected_return_rm": 4857.00,
+        "status": { "code": "UPCOMING", "label": "Coming Soon", "color": "#8A2BE2" },
+        "is_single_buyer": true,
+        "actions": { "buy_now_enabled": false, "view_details_url": "/receivables/ARPG-25100014" }
+      },
+      {
+        "id": "ARPG-25100015",
+        "title": "Ar-Rahnu Receivable",
+        "branch": "AR-RAHNU TEKUN - KOTA BHARU",
+        "asset": { "type": "24K Gold Coin", "weight_gram": 20, "appraised_value_rm": 8900.00 },
+        "receivable_value_rm": 7000.00,
+        "purchase_price_rm": 6820.00,
+        "profit_rate_pa": 7.1,
+        "tenure_days": 10,
+        "start_date": "2025-10-30",
+        "maturity_date": "2025-11-09",
+        "expected_return_rm": 6832.00,
+        "status": { "code": "UPCOMING", "label": "Coming Soon", "color": "#8A2BE2" },
+        "is_single_buyer": true,
+        "actions": { "buy_now_enabled": false, "view_details_url": "/receivables/ARPG-25100015" }
+      },
+      {
+        "id": "ARPG-25100016",
+        "title": "Ar-Rahnu Receivable",
+        "branch": "KOSAHABAT - TEMERLOH",
+        "asset": { "type": "21K Chain", "weight_gram": 14, "appraised_value_rm": 6600.00 },
+        "receivable_value_rm": 5000.00,
+        "purchase_price_rm": 4870.00,
+        "profit_rate_pa": 6.5,
+        "tenure_days": 8,
+        "start_date": "2025-11-01",
+        "maturity_date": "2025-11-09",
+        "expected_return_rm": 4876.00,
+        "status": { "code": "UPCOMING", "label": "Coming Soon", "color": "#8A2BE2" },
+        "is_single_buyer": true,
+        "actions": { "buy_now_enabled": false, "view_details_url": "/receivables/ARPG-25100016" }
+      },
+      {
+        "id": "ARPG-25100017",
+        "title": "Ar-Rahnu Receivable",
+        "branch": "AR-RAHNU XCHANGE - KUCHING",
+        "asset": { "type": "22K Gold Bangle", "weight_gram": 22, "appraised_value_rm": 8400.00 },
+        "receivable_value_rm": 7000.00,
+        "purchase_price_rm": 6800.00,
+        "profit_rate_pa": 6.8,
+        "tenure_days": 7,
+        "start_date": "2025-11-02",
+        "maturity_date": "2025-11-09",
+        "expected_return_rm": 6809.00,
+        "status": { "code": "UPCOMING", "label": "Coming Soon", "color": "#8A2BE2" },
+        "is_single_buyer": true,
+        "actions": { "buy_now_enabled": false, "view_details_url": "/receivables/ARPG-25100017" }
+      }
+    ]
+  },
+  "meta": {
+    "currency": "MYR",
+    "upcoming_count": 5,
+    "last_updated": "2025-10-25T13:00:00Z"
+  }
+}

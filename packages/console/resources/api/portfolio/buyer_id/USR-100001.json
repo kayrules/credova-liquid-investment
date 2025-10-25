@@ -1,0 +1,157 @@
+{
+  "buyer_id": "USR-100001",
+  "summary": {
+    "total_invested_rm": 48210.00,
+    "total_expected_return_rm": 48468.80,
+    "total_profit_earned_rm": 110.30,
+    "active_count": 7,
+    "completed_count": 5
+  },
+  "data": [
+    {
+      "id": "ARPG-25100001",
+      "branch": "KOSAHABAT - BANTING",
+      "status": { "code": "SOLD_AND_OUTSTANDING", "label": "Active", "color": "#2196F3" },
+      "purchase_price_rm": 5524.20,
+      "expected_return_rm": 5532.68,
+      "profit_rate_pa": 7.0,
+      "start_date": "2025-10-10",
+      "maturity_date": "2025-10-18",
+      "profit_earned_rm": null,
+      "asset": { "type": "22K Gold Chain", "weight_gram": 20 }
+    },
+    {
+      "id": "ARPG-25100002",
+      "branch": "KOSAHABAT - KUANTAN",
+      "status": { "code": "SOLD_AND_OUTSTANDING", "label": "Active", "color": "#2196F3" },
+      "purchase_price_rm": 4750.00,
+      "expected_return_rm": 4756.25,
+      "profit_rate_pa": 6.5,
+      "start_date": "2025-10-12",
+      "maturity_date": "2025-10-20",
+      "profit_earned_rm": null,
+      "asset": { "type": "24K Gold Bar", "weight_gram": 15 }
+    },
+    {
+      "id": "ARPG-25100003",
+      "branch": "KOSAHABAT - SEREMBAN",
+      "status": { "code": "SOLD_AND_OUTSTANDING", "label": "Active", "color": "#2196F3" },
+      "purchase_price_rm": 6800.00,
+      "expected_return_rm": 6811.00,
+      "profit_rate_pa": 6.9,
+      "start_date": "2025-10-15",
+      "maturity_date": "2025-10-25",
+      "profit_earned_rm": null,
+      "asset": { "type": "21K Gold Bangle", "weight_gram": 22 }
+    },
+    {
+      "id": "ARPG-25100004",
+      "branch": "AR-RAHNU XCHANGE - KAJANG",
+      "status": { "code": "SOLD_AND_OUTSTANDING", "label": "Active", "color": "#2196F3" },
+      "purchase_price_rm": 5775.00,
+      "expected_return_rm": 5793.00,
+      "profit_rate_pa": 7.2,
+      "start_date": "2025-10-14",
+      "maturity_date": "2025-10-28",
+      "profit_earned_rm": null,
+      "asset": { "type": "22K Necklace", "weight_gram": 18 }
+    },
+    {
+      "id": "ARPG-25100005",
+      "branch": "KOSAHABAT - PUTRAJAYA",
+      "status": { "code": "SOLD_AND_OUTSTANDING", "label": "Active", "color": "#2196F3" },
+      "purchase_price_rm": 4850.00,
+      "expected_return_rm": 4857.26,
+      "profit_rate_pa": 6.6,
+      "start_date": "2025-10-18",
+      "maturity_date": "2025-10-26",
+      "profit_earned_rm": null,
+      "asset": { "type": "22K Necklace", "weight_gram": 14 }
+    },
+    {
+      "id": "ARPG-25100006",
+      "branch": "KOSAHABAT - MELAKA",
+      "status": { "code": "SOLD_AND_OUTSTANDING", "label": "Active", "color": "#2196F3" },
+      "purchase_price_rm": 2900.00,
+      "expected_return_rm": 2903.44,
+      "profit_rate_pa": 7.0,
+      "start_date": "2025-10-16",
+      "maturity_date": "2025-10-22",
+      "profit_earned_rm": null,
+      "asset": { "type": "22K Earrings", "weight_gram": 10 }
+    },
+    {
+      "id": "ARPG-25100007",
+      "branch": "AR-RAHNU XCHANGE - PENANG",
+      "status": { "code": "SOLD_AND_OUTSTANDING", "label": "Active", "color": "#2196F3" },
+      "purchase_price_rm": 3860.00,
+      "expected_return_rm": 3865.22,
+      "profit_rate_pa": 6.8,
+      "start_date": "2025-10-17",
+      "maturity_date": "2025-10-25",
+      "profit_earned_rm": null,
+      "asset": { "type": "22K Gold Pendant", "weight_gram": 12 }
+    },
+
+    {
+      "id": "ARPG-25100008",
+      "branch": "KOSAHABAT - BANTING",
+      "status": { "code": "SOLD_MATURED", "label": "Completed", "color": "#43A047" },
+      "purchase_price_rm": 5000.00,
+      "expected_return_rm": 5007.80,
+      "profit_rate_pa": 7.0,
+      "start_date": "2025-09-20",
+      "maturity_date": "2025-09-28",
+      "profit_earned_rm": 7.80,
+      "asset": { "type": "24K Chain", "weight_gram": 15 }
+    },
+    {
+      "id": "ARPG-25100009",
+      "branch": "KOSAHABAT - KUANTAN",
+      "status": { "code": "SOLD_MATURED", "label": "Completed", "color": "#43A047" },
+      "purchase_price_rm": 6200.00,
+      "expected_return_rm": 6210.00,
+      "profit_rate_pa": 6.9,
+      "start_date": "2025-09-10",
+      "maturity_date": "2025-09-18",
+      "profit_earned_rm": 10.00,
+      "asset": { "type": "22K Gold Bangle", "weight_gram": 20 }
+    },
+    {
+      "id": "ARPG-25100010",
+      "branch": "AR-RAHNU TEKUN - IPOH",
+      "status": { "code": "SOLD_MATURED", "label": "Completed", "color": "#43A047" },
+      "purchase_price_rm": 7000.00,
+      "expected_return_rm": 7010.50,
+      "profit_rate_pa": 7.0,
+      "start_date": "2025-09-05",
+      "maturity_date": "2025-09-13",
+      "profit_earned_rm": 10.50,
+      "asset": { "type": "22K Chain & Pendant", "weight_gram": 19 }
+    },
+    {
+      "id": "ARPG-25100011",
+      "branch": "KOSAHABAT - SEREMBAN",
+      "status": { "code": "SOLD_MATURED", "label": "Completed", "color": "#43A047" },
+      "purchase_price_rm": 5800.00,
+      "expected_return_rm": 5810.20,
+      "profit_rate_pa": 6.8,
+      "start_date": "2025-09-03",
+      "maturity_date": "2025-09-11",
+      "profit_earned_rm": 10.20,
+      "asset": { "type": "21K Gold Chain", "weight_gram": 18 }
+    },
+    {
+      "id": "ARPG-25100012",
+      "branch": "AR-RAHNU XCHANGE - KLANG",
+      "status": { "code": "SOLD_MATURED", "label": "Completed", "color": "#43A047" },
+      "purchase_price_rm": 5300.00,
+      "expected_return_rm": 5311.30,
+      "profit_rate_pa": 6.9,
+      "start_date": "2025-09-01",
+      "maturity_date": "2025-09-08",
+      "profit_earned_rm": 11.30,
+      "asset": { "type": "22K Bracelet", "weight_gram": 17 }
+    }
+  ]
+}

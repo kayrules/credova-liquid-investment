@@ -37,6 +37,15 @@ const { class: clazz } = Astro.props;
 				document.documentElement.classList.remove('dark');
 			}
 		</script>
+
+		{import.meta.env.DEV && (
+			<script
+				src="//unpkg.com/react-grab/dist/index.global.js"
+				crossorigin="anonymous"
+				is:inline
+				data-enabled="true"
+			></script>
+		)}
 	</head>
 	<body
 		class:list={[

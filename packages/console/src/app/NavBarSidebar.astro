@@ -6,7 +6,7 @@ import liquidLogo from '../assets/liquid-logo.png';
 
 import ColorModeSwitcher from '../components/ColorModeSwitcher.astro';
 import GitHubButton from '../components/GitHubButton.astro';
-import SearchInput from '../components/SearchInput.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
 ---
 
 <nav
@@ -52,12 +52,10 @@ import SearchInput from '../components/SearchInput.astro';
 					/>
 				</a>
 
-				<SearchInput />
+				<Breadcrumb />
 			</div>
 
 			<div class="flex items-center">
-				<GitHubButton repository="themesberg/flowbite-astro-admin-dashboard" />
-
 				<!-- Search mobile -->
 				<button
 					id="toggleSidebarMobileSearch"
