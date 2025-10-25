@@ -1,7 +1,6 @@
 ---
 /* eslint max-lines: 'off' */
 
-import { url } from '../lib/data.js';
 import { IoStatsChartOutline, IoWalletOutline, IoClipboardOutline, IoCalendarOutline, IoDocumentTextOutline, IoSettingsOutline, IoOptionsOutline, IoCheckmarkCircleOutline, IoTimeOutline, IoBookmarkOutline } from 'react-icons/io5';
 
 // Get current page path
@@ -76,7 +75,7 @@ const isMarketplaceActive = isActive('/receivables');
 						<ul id="dropdown-marketplace" class="py-2 space-y-2">
 							<li>
 								<a
-									href={url('receivables/available')}
+									href="/receivables/available"
 									class:list={[
 										"flex items-center gap-2 p-2 pl-11 w-full text-md rounded-lg group",
 										isActive('/receivables/available')
@@ -94,7 +93,7 @@ const isMarketplaceActive = isActive('/receivables');
 							</li>
 							<li>
 								<a
-									href={url('receivables/coming-soon')}
+									href="/receivables/coming-soon"
 									class:list={[
 										"flex items-center gap-2 p-2 pl-11 w-full text-md rounded-lg group",
 										isActive('/receivables/coming-soon')
@@ -112,7 +111,7 @@ const isMarketplaceActive = isActive('/receivables');
 							</li>
 							<li>
 								<a
-									href={url('receivables/saved')}
+									href="/receivables/saved"
 									class:list={[
 										"flex items-center gap-2 p-2 pl-11 w-full text-md rounded-lg group",
 										isActive('/receivables/saved')
@@ -132,7 +131,7 @@ const isMarketplaceActive = isActive('/receivables');
 					</li>
 					<li>
 						<a
-							href={url('portfolio')}
+							href="/portfolio"
 							class:list={[
 								"flex items-center p-2 text-base rounded-lg group",
 								isActive('/portfolio')
@@ -153,7 +152,7 @@ const isMarketplaceActive = isActive('/receivables');
 					</li>
 					<li>
 						<a
-							href={url('activity')}
+							href="/activity"
 							class:list={[
 								"flex items-center p-2 text-base rounded-lg group",
 								isActive('/activity')
@@ -174,7 +173,7 @@ const isMarketplaceActive = isActive('/receivables');
 					</li>
 					<li>
 						<a
-							href={url('statements')}
+							href="/statements"
 							class:list={[
 								"flex items-center p-2 text-base rounded-lg group",
 								isActive('/statements')
@@ -196,7 +195,7 @@ const isMarketplaceActive = isActive('/receivables');
 				</ul>
 				<div class="pt-2 space-y-2">
 					<a
-						href={url('settings')}
+						href="/settings"
 						class:list={[
 							"flex items-center p-2 text-base rounded-lg group",
 							isActive('/settings')
