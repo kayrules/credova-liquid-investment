@@ -1,0 +1,62 @@
+{
+  "buyer_id": "USR-100001",
+  "graph_title": "Portfolio Performance - Investment Return Over Time",
+  "currency": "MYR",
+  "charts": {
+    "capital_over_time": {
+      "title": "Capital Growth Over Time",
+      "graph_type": "area",
+      "yAxis_label": "Amount (RM)",
+      "metrics": {
+        "labels": ["May 2025", "Jun 2025", "Jul 2025", "Aug 2025", "Sep 2025", "Oct 2025"],
+        "datasets": [
+          {
+            "label": "Amount Invested (RM)",
+            "color": "#00C853",
+            "data": [18000, 22500, 26000, 31000, 42000, 48210]
+          },
+          {
+            "label": "Portfolio Value (RM)",
+            "color": "#1976D2",
+            "data": [18120, 22710, 26220, 31280, 42360, 48468.80]
+          }
+        ]
+      }
+    },
+    "profit_trend": {
+      "title": "Monthly Profit & ROI Trend",
+      "graph_type": "combo",
+      "yAxis_left": "Profit (RM)",
+      "yAxis_right": "ROI (%)",
+      "metrics": {
+        "labels": ["May 2025", "Jun 2025", "Jul 2025", "Aug 2025", "Sep 2025", "Oct 2025"],
+        "datasets": [
+          {
+            "label": "Monthly Profit Earned (RM)",
+            "type": "bar",
+            "color": "#FFC107",
+            "data": [120, 210, 220, 280, 360, 110.30]
+          },
+          {
+            "label": "Cumulative ROI (%)",
+            "type": "line",
+            "color": "#8E24AA",
+            "data": [0.7, 0.9, 1.1, 1.3, 1.4, 1.5],
+            "yAxis": "right"
+          }
+        ]
+      }
+    }
+  },
+  "summary": {
+    "total_invested_rm": 48210.00,
+    "current_portfolio_value_rm": 48468.80,
+    "total_profit_earned_rm": 110.30,
+    "average_profit_rate_pa": 6.9,
+    "average_tenure_days": 8,
+    "active_receivables": 7,
+    "completed_receivables": 5,
+    "performance_period": "May – Oct 2025",
+    "last_updated": "2025-10-25T13:00:00Z"
+  }
+}

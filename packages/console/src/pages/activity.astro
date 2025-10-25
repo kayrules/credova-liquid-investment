@@ -1,107 +1,156 @@
 ---
 import LayoutSidebar from '../app/LayoutSidebar.astro';
+
+// Sample activity data - replace with actual data source
+const activities = [
+	{
+		id: 'TXN-001',
+		type: 'Investment',
+		description: 'Investment to loan MBDF-24100493',
+		amount: 200.00,
+		status: 'SUCCESS',
+		date: '2024-10-23',
+		time: '12:05:29'
+	},
+	{
+		id: 'TXN-002',
+		type: 'Investment',
+		description: 'Investment to loan MBDF-24100678',
+		amount: 300.00,
+		status: 'SUCCESS',
+		date: '2024-10-23',
+		time: '12:03:56'
+	},
+	{
+		id: 'TXN-003',
+		type: 'Investment',
+		description: 'Investment to loan MBDF-24100289',
+		amount: 200.00,
+		status: 'SUCCESS',
+		date: '2024-10-23',
+		time: '12:02:33'
+	},
+	{
+		id: 'TXN-004',
+		type: 'Deposit',
+		description: 'Account top-up via bank transfer',
+		amount: 1000.00,
+		status: 'SUCCESS',
+		date: '2024-10-22',
+		time: '09:15:42'
+	},
+	{
+		id: 'TXN-005',
+		type: 'Withdrawal',
+		description: 'Withdrawal to bank account',
+		amount: 150.00,
+		status: 'PENDING',
+		date: '2024-10-21',
+		time: '14:30:18'
+	}
+];
+
+const formatCurrency = (amount: number) => {
+	return `RM ${amount.toLocaleString('en-MY', {
+		minimumFractionDigits: 2,
+		maximumFractionDigits: 2
+	})}`;
+};
+
+const formatDateTime = (date: string, time: string) => {
+	return `${new Date(date).toLocaleDateString('en-GB', {
+		day: '2-digit',
+		month: 'short',
+		year: 'numeric'
+	})} ${time}`;
+};
+
+const getStatusColor = (status: string) => {
+	switch (status) {
+		case 'SUCCESS':
+			return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300';
+		case 'PENDING':
+			return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300';
+		case 'FAILED':
+			return 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300';
+		default:
+			return 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300';
+	}
+};
 ---
 
 <LayoutSidebar>
-	<div class="p-4 bg-primary-600 dark:bg-primary-700">
-		<div class="max-w-3xl mx-auto">
-			<h1 class="text-3xl font-bold text-white mb-2">My activity</h1>
-			<p class="text-white">What have I been up to?</p>
+	<div class="p-4 bg-white border-b border-gray-200 lg:mt-1.5 dark:bg-gray-800 dark:border-gray-700">
+		<div class="mb-4">
+			<h1 class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">
+				My Activity
+			</h1>
+			<p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+				Track all your transactions and activities
+			</p>
 		</div>
 	</div>
 
-	<div class="flex flex-col p-6 bg-gray-50 dark:bg-gray-900 min-h-screen">
-		<div class="max-w-3xl mx-auto w-full">
-			<!-- Filter Tabs -->
-			<div class="mb-6">
-				<div class="flex items-center space-x-2 text-sm mb-4">
-					<span class="text-gray-600 dark:text-gray-400">Filter activity by</span>
-				</div>
-				<div class="flex space-x-4 border-b border-gray-200 dark:border-gray-700">
-					<button class="px-4 py-2 font-medium text-gray-900 border-b-2 border-primary-600 dark:text-white">
-						All
-					</button>
-					<button class="px-4 py-2 font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-						Deposits
-					</button>
-					<button class="px-4 py-2 font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-						Investments
-					</button>
-					<button class="px-4 py-2 font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-						Withdrawals
-					</button>
-				</div>
-			</div>
-
-			<!-- Activity List -->
-			<div class="space-y-4">
-				<!-- Activity Item 1 -->
-				<div class="p-4 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-					<div class="flex items-start">
-						<div class="flex-shrink-0 mr-4">
-							<div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center dark:bg-primary-900">
-								<svg class="w-5 h-5 text-primary-600 dark:text-primary-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
-									<path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"></path>
-								</svg>
-							</div>
-						</div>
-						<div class="flex-1">
-							<div class="flex items-center justify-between mb-1">
-								<h4 class="text-sm font-semibold text-gray-900 dark:text-white">Investment</h4>
-								<span class="text-xs text-gray-500 dark:text-gray-400">2024-10-23 12:05:29</span>
-							</div>
-							<p class="text-sm text-gray-600 dark:text-gray-400">
-								You've made an RM200.00 investment to loan MBDF-24100493. Status is SUCCESS.
-							</p>
-						</div>
-					</div>
+	<div class="px-4 pt-6">
+		<!-- Activity Table -->
+		<div class="mb-4">
+			<div
+				class="p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 dark:border-gray-700 dark:bg-gray-800"
+			>
+				<div class="flex items-center justify-between mb-4">
+					<h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+						Recent Activity
+						<span
+							class="ml-2 text-sm font-normal text-gray-500 dark:text-gray-400"
+						>
+							({activities.length} items)
+						</span>
+					</h3>
 				</div>
 
-				<!-- Activity Item 2 -->
-				<div class="p-4 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-					<div class="flex items-start">
-						<div class="flex-shrink-0 mr-4">
-							<div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center dark:bg-primary-900">
-								<svg class="w-5 h-5 text-primary-600 dark:text-primary-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
-									<path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"></path>
-								</svg>
-							</div>
-						</div>
-						<div class="flex-1">
-							<div class="flex items-center justify-between mb-1">
-								<h4 class="text-sm font-semibold text-gray-900 dark:text-white">Investment</h4>
-								<span class="text-xs text-gray-500 dark:text-gray-400">2024-10-23 12:03:56</span>
-							</div>
-							<p class="text-sm text-gray-600 dark:text-gray-400">
-								You've made an RM300.00 investment to loan MBDF-24100678. Status is SUCCESS.
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- Activity Item 3 -->
-				<div class="p-4 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-					<div class="flex items-start">
-						<div class="flex-shrink-0 mr-4">
-							<div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center dark:bg-primary-900">
-								<svg class="w-5 h-5 text-primary-600 dark:text-primary-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
-									<path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"></path>
-								</svg>
-							</div>
-						</div>
-						<div class="flex-1">
-							<div class="flex items-center justify-between mb-1">
-								<h4 class="text-sm font-semibold text-gray-900 dark:text-white">Investment</h4>
-								<span class="text-xs text-gray-500 dark:text-gray-400">2024-10-23 12:02:33</span>
-							</div>
-							<p class="text-sm text-gray-600 dark:text-gray-400">
-								You've made an RM200.00 investment to loan MBDF-24100289. Status is SUCCESS.
-							</p>
-						</div>
-					</div>
+				<div class="overflow-x-auto">
+					<table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+						<thead
+							class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+						>
+							<tr>
+								<th scope="col" class="p-4">Transaction ID</th>
+								<th scope="col" class="p-4">Type</th>
+								<th scope="col" class="p-4">Description</th>
+								<th scope="col" class="p-4">Amount</th>
+								<th scope="col" class="p-4">Date & Time</th>
+								<th scope="col" class="p-4">Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							{activities.map((activity) => (
+								<tr class="border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">
+									<td class="p-4 font-medium text-gray-900 dark:text-white">
+										{activity.id}
+									</td>
+									<td class="p-4 text-gray-900 dark:text-white">
+										{activity.type}
+									</td>
+									<td class="p-4 text-gray-900 dark:text-white">
+										{activity.description}
+									</td>
+									<td class="p-4 font-mono font-semibold text-gray-900 dark:text-white">
+										{formatCurrency(activity.amount)}
+									</td>
+									<td class="p-4 text-gray-900 dark:text-white">
+										{formatDateTime(activity.date, activity.time)}
+									</td>
+									<td class="p-4">
+										<span
+											class={`px-2.5 py-0.5 rounded-md text-xs font-medium ${getStatusColor(activity.status)}`}
+										>
+											{activity.status}
+										</span>
+									</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>

@@ -66,7 +66,6 @@ const isMarketplaceActive = isActive('/receivables');
 							type="button"
 							class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
 							aria-controls="dropdown-marketplace"
-							data-collapse-toggle="dropdown-marketplace"
 						>
 							<IoWalletOutline
 								className="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
@@ -74,7 +73,7 @@ const isMarketplaceActive = isActive('/receivables');
 							/>
 							<span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Ar-Rahnu Marketplace</span>
 						</button>
-						<ul id="dropdown-marketplace" class={isMarketplaceActive ? "py-2 space-y-2" : "hidden py-2 space-y-2"}>
+						<ul id="dropdown-marketplace" class="py-2 space-y-2">
 							<li>
 								<a
 									href={url('receivables/available')}
